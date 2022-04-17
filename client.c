@@ -39,7 +39,7 @@ void	send_signal(int *binary, int pid)
 			kill(pid, SIGUSR1);
 		else if (binary[i] == 1)
 			kill(pid, SIGUSR2);
-		usleep(210);
+		usleep(100);
 		i++;
 	}
 }
